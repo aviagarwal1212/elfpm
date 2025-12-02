@@ -57,22 +57,27 @@ defmodule Elfpm.Solutions.Y25.Day01Test do
 
   test "part two example" do
     input = ~S"""
-    This is an
-    example input.
-    replace with
-    an example from
-    the AoC website.
+    L68
+    L30
+    R48
+    L5
+    R60
+    L55
+    L1
+    L99
+    R14
+    L82
     """
 
-    assert CHANGE_ME == solve(input, :part_two)
+    assert 6 == solve(input, :part_two)
   end
 
   # You may also implement a test to validate the part two to ensure that you
   # did not broke your shared modules when implementing another problem.
 
-  # @part_two_solution CHANGE_ME
-  #
-  # test "part two solution" do
-  #   assert {:ok, @part_two_solution} == AoC.run(2025, 1, :part_two)
-  # end
+  @part_two_solution 5923
+
+  test "part two solution" do
+    assert {:ok, @part_two_solution} == AoC.run(2025, 1, :part_two)
+  end
 end
